@@ -1,11 +1,11 @@
 # QA Signoff -- Sprint-1
 
-**Date:** 2026-07-15 03:23:58
+**Date:** 2026-10-27 01:42:28
 **QA Lead:** AuroraQA
-**Session:** QA_TESTER-20260715
-**Run ID:** 20260715032358
+**Session:** KAN1-QA-20261027
+**Run ID:** 20261027014228
 **Verdict:** ❌ BLOCKED
-**Issue Lookup:** session_id=QA_TESTER-20260715
+**Issue Lookup:** session_id=KAN1-QA-20261027
 
 ---
 
@@ -13,50 +13,44 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Tests | 55 |
-| Passed | 40 |
-| Failed | 10 |
+| Total Tests | 54 |
+| Passed | 42 |
+| Failed | 7 |
 | Errors | 5 |
-| Pass Rate | 72.73% |
+| Pass Rate | 77.78% |
 
 ## Manual Validation
 
 | Metric | Value |
 |--------|-------|
-| Total Checks | 16 |
-| Passed | 9 |
-| Failed | 6 |
-| Warnings | 1 |
-| Health Score | 56% |
+| Total Checks | 17 |
+| Passed | 16 |
+| Failed | 1 |
+| Warnings | 0 |
+| Health Score | 94% |
 
 
 ## Issues Filed
 
 | Issue | Title | Severity | Priority | Status |
 |-------|-------|----------|----------|--------|
-| [#1](https://github.com/SucharithaMeriga7/qa/issues/1) | [BLOCKER] CUSTOMERS.CUSTOMER_ID — 800 Duplicate Primary Keys (40% Duplication Rate) | BLOCKER | HIGH | Open |
-| [#2](https://github.com/SucharithaMeriga7/qa/issues/2) | [BLOCKER] ORDERS.CUSTOMER_ID — 800 Duplicate Values Violating Deduplication Requirement | BLOCKER | HIGH | Open |
-| [#3](https://github.com/SucharithaMeriga7/qa/issues/3) | [BLOCKER] AGGREGATE_CUSTOMER_SPEND — Table Completely Empty (0 Rows) | BLOCKER | HIGH | Open |
-| [#4](https://github.com/SucharithaMeriga7/qa/issues/4) | [BLOCKER] AGGREGATE_CUSTOMER_SPEND_SCD2 — Table Completely Empty (0 Rows) | BLOCKER | HIGH | Open |
-| [#1](https://github.com/SucharithaMeriga7/tester/issues/1) | [BLOCKER] CUSTOMERS.CUSTOMER_ID — 800 Duplicate Primary Keys (40% Duplication Rate) | BLOCKER | HIGH | Open |
-| [#2](https://github.com/SucharithaMeriga7/tester/issues/2) | [BLOCKER] ORDERS.CUSTOMER_ID — 800 Duplicate Values Violating Deduplication Requirement | BLOCKER | HIGH | Open |
-| [#3](https://github.com/SucharithaMeriga7/tester/issues/3) | [BLOCKER] AGGREGATE_CUSTOMER_SPEND — Table Completely Empty (0 Rows) | BLOCKER | HIGH | Open |
-| [#4](https://github.com/SucharithaMeriga7/tester/issues/4) | [BLOCKER] AGGREGATE_CUSTOMER_SPEND_SCD2 — Table Completely Empty (0 Rows) | BLOCKER | HIGH | Open |
-| [#5](https://github.com/SucharithaMeriga7/qa/issues/5) | [MAJOR] ORDERSUMMARY SCD2 — 2 Keys With Multiple Simultaneously Active Records | MAJOR | HIGH | Open |
-| [#6](https://github.com/SucharithaMeriga7/qa/issues/6) | [MAJOR] ORDERSUMMARY.CUSTID — 2 Duplicate Keys and 1 Orphan EMAILID Reference | MAJOR | HIGH | Open |
-| [#5](https://github.com/SucharithaMeriga7/tester/issues/5) | [MAJOR] ORDERSUMMARY SCD2 — 2 Keys With Multiple Simultaneously Active Records | MAJOR | HIGH | Open |
-| [#6](https://github.com/SucharithaMeriga7/tester/issues/6) | [MAJOR] ORDERSUMMARY.CUSTID — 2 Duplicate Keys and 1 Orphan EMAILID Reference | MAJOR | HIGH | Open |
+| [#8](https://github.com/SucharithaMeriga7/tester/issues/8) | [MAJOR] Referential Integrity Failure — ORDER.CUSTID has no valid references in CUSTOMER | MAJOR | HIGH | Open |
+| [#9](https://github.com/SucharithaMeriga7/tester/issues/9) | [MAJOR] Referential Integrity Failure — ORDERSUMMARY.CUSTID has no valid references in CUSTOMER | MAJOR | HIGH | Open |
+| [#10](https://github.com/SucharithaMeriga7/tester/issues/10) | [MAJOR] Referential Integrity Failure — ORDERSUMMARY.EMAILID has no valid references in CUSTOMER | MAJOR | HIGH | Open |
+| [#11](https://github.com/SucharithaMeriga7/tester/issues/11) | [MAJOR] Referential Integrity Failure — ORDERSUMMARY.ORDERID has no valid references in ORDER | MAJOR | HIGH | Open |
+| [#12](https://github.com/SucharithaMeriga7/tester/issues/12) | [MINOR] Schema Anomaly — Duplicate order/ORDER tables with conflicting schemas | MINOR | MEDIUM | Open |
+| [#13](https://github.com/SucharithaMeriga7/tester/issues/13) | [MINOR] SCD2 History Missing — order table contains 0 inactive records | MINOR | MEDIUM | Open |
 
-**Total Issues:** 12 (8 Blocker, 4 Major, 0 Minor)
+**Total Issues:** 6 (0 Blocker, 4 Major, 2 Minor)
 
 ## Blocker Status
 
-🔴 **8 BLOCKER(S) FOUND** -- Release is blocked.
+✅ **NO BLOCKERS** -- No blocking issues found.
 
 ## Sign-Off
 
-**❌ BLOCKED** -- 8 blocker(s) must be resolved before release.
+**❌ BLOCKED** -- Too many major issues (4). Must reduce to <=2 before release.
 
 ---
 
-_Signed: AuroraQA | 2026-07-15 03:23:58 | Session: QA_TESTER-20260715_
+_Signed: AuroraQA | 2026-10-27 01:42:28 | Session: KAN1-QA-20261027_
